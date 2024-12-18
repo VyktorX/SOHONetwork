@@ -175,3 +175,41 @@ The Access Point provides wireless connectivity for laptops.
   <td>Connected via Access Point</td>
  </tr>
 </table>
+
+<h2>Testing and Verification</h2>
+<h3>Ping Tests</h3>
+From PC0(Wired) <br /> <br />
+
+![PC0 - Ping Test](PC0-Ping-Test.png)
+![PC0 - Ping Test1](PC0-Ping-Test1.png)
+
+From Laptops (Wireless) <br /> <br />
+
+![Laptops - Ping Test](Laptops-Ping-Test.png)
+![Laptops - Ping Test1](Laptops-Ping-Test1.png)
+![Laptops - Ping Test2](Laptops-Ping-Test2.png)
+
+<h2>DHCP Verification</h2>
+On the router we are going to run:
+
+```sh
+show ip dhcp binding
+```
+to verify the laptops receive IP addresses dinamically.
+
+![DHCP - Verification](DHCP-Verification.png)
+
+<h2>Future Improvements</h2>
+To enhance security and performance, the following improvements are recommended: <br />
+
+- Firewall: Add a Cisco ASA Firewall or configure router ACLs. <br />
+- VLANs: Segment the network to isolate devices (e.g., wired devices, wireless clients, and printers). <br />
+- IDS/IPS: Add an Intrusion Detection/Prevention System to monitor network traffic. <br />
+- Centralized Server: Implement a server for DHCP, DNS, and file sharing. <br />
+- Monitoring Tools: Use Syslog or SNMP for network monitoring and visibility. <br />
+
+<h2>Files Included</h2>
+You can download the Packet Tracer project file <a href=https://github.com/VyktorX/SOHONetwork/blob/main/SmallBusiness_Network.pkt>here</a>
+
+<h2>Conclusion</h2>
+This documentation outlines the successful design and configuration of a SOHO network for a small business. The network provides both wired and wireless connectivity, dynamic IP assignment via DHCP, and efficient routing through a Cisco 2911 router. Future improvements will focus on security enhancements and scalability.
